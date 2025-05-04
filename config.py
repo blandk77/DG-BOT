@@ -8,7 +8,7 @@ from logging.handlers import RotatingFileHandler
 load_dotenv()
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "8031779616:AAGq-h-uaN4j_UcfmkAeKPluXmFhNWBOlHM")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "27394279"))
@@ -17,7 +17,7 @@ APP_ID = int(os.environ.get("APP_ID", "27394279"))
 API_HASH = os.environ.get("API_HASH", "90a9aa4c31afa3750da5fd686c410851")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", ""))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002596071687"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1705634892"))
@@ -26,11 +26,11 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1705634892"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "")
-DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://python21java:8ZFGYMKJCqAPwsiO@filestore.f876hjv.mongodb.net/?retryWrites=true&w=majority&appName=Filestore")
+DB_NAME = os.environ.get("DATABASE_NAME", "DG-BOT")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "0"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002241364971"))
 JOIN_REQUEST_ENABLE = os.environ.get("JOIN_REQUEST_ENABLED", None)
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
